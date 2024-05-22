@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif'
+
+}
+
+.header {
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 50px;
+
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form>div {
+    width: 400px;
+    margin: 10px auto;
+}
+
+.form .form-element input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.button-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-element button {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.form .result {
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-top: 5px;
+}
+
+.list {
+    width: 800px;
+    margin: 40px auto;
+}
+
+.list h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.list table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.list table thead tr {
+    background: #555;
+    color: #eee;
+}
+
+.list table thead tr th,
+.list table tbody tr td {
+    padding: 7px;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL shortner </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">Create Short URL</div>
+    <form action="/shorturl" method="post">
+    <div class="form">
+    <div class="form-element">
+        <label for="longurl">Enter url here:</label>
+        <input type="url" id="longurl" name="longurl">
+    </div>
+    <div class="button-element">
+        <button id="shorturl"> Generate Short URL</button>
+    </div>
+    <div class="result"><a href="#" id="short-url" target="_blank"></a></div>
+        </form>
+</div>
+    <div class="list">
+        <h2>All Links</h2>
+       
+{{#if results}}
+<table>
+    <thead>
+        <tr>
+            <th>Long URL</th>
+            <th>Short URL</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each results}}
+        <tr>
+            <td>{{this.longurl}}</td>
+            <td><a href='/{{this.shorturl}}' target="_blank">{{this.shorturl}}</a></td>
+            <td>{{this.count}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}}
+
+
+    </div>
+</body>
+</html>
